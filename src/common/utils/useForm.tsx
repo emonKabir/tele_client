@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { notification } from 'antd';
-import axios from 'axios';
+//import axios from 'axios';
 
 const init = {
   number: null,
@@ -49,7 +49,7 @@ export const useForm = (validate: any) => {
     event.preventDefault();
     setErrors(validate(values));
     // Your url for API
-    const url = '';
+    //const url = '';
     // if (Object.values(values).every((x) => x !== '')) {
     //   // axios
     //   //   .post(url, {
